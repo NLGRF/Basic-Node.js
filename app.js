@@ -1,4 +1,6 @@
-console.log('Hello World');
-for (var i = 1; i <=10; i++) {
-  console.log(i);
-}
+var response = require('./method');
+
+console.log(response.update());
+console.log(response.pi);
+console.log(response.data);
+response.data.deleteUser();
