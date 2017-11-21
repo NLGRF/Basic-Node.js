@@ -1,6 +1,4 @@
-var response = require('./method');
+const fs = require('fs');
 
-console.log(response.update());
-console.log(response.pi);
-console.log(response.data);
-response.data.deleteUser();
+var readMe = fs.readFileSync('code.txt','utf8');
+console.log(readMe);
